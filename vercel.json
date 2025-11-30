@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
+}
